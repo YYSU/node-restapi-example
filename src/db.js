@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 import bluebird from 'bluebird'
-import config from '../config'
+import config from './config'
 
 export default callback => {
   mongoose.Promise = bluebird

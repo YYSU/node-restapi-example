@@ -1,12 +1,12 @@
-import express from 'express'
-import config from '../config'
-import middleware from '../middleware'
-import initializeDb from '../db'
+import express from 'express';
+import config from '../config';
+import middleware from '../middleware';
+import initializeDb from '../db';
 
-let router = express()
+let router = express();
 
 //connect to db
-initializeDb(dv => {
+initializeDb(db => {
 
   // internal middleware
   router.use(middleware({ config, db }))
@@ -16,4 +16,4 @@ initializeDb(dv => {
   
 })
 
-export default router
+export default router;
