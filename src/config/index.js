@@ -1,4 +1,5 @@
 export default {
   "port": 3000,
-  "mongoUrl": "mongodb://mongolab"
+  "mongoUrl": "mongodb://",
+  "bodyLimit": "100kb"
 }
