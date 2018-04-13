@@ -7,7 +7,7 @@ export default callback => {
   let db = mongoose.connection;
   mongoose.connect(config.mongoUrl, { useMongoClient: true })
     .then(function(){
-        console.log(" Connected to DB ");
+        console.log("Connected to MongoDB ");
     }).catch(err => console.error(err));
   callback(db)
 }
