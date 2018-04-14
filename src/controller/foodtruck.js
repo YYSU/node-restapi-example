@@ -113,5 +113,16 @@ export default ({ config, db }) => {
         })
     })
 
+    // retrieve all Food Trucks which serve a certain foodtype
+    // 'v1/foodtruck/foodtype/:foodtype'
+    api.get('/foodtype/:foodtype', (req, res) => {
+        FoodTruck.find({ foodtype: req.params.foodtype }, (err, foodtruck) => {
+            if (err) {
+                res.send(err)
+            }
+            res.json(foodtruck)
+        })
+    })
+
     return api;
 }
