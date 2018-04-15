@@ -1,5 +1,6 @@
 export default {
   "port": 3000,
-  "mongoUrl": "mongodb://",
+  "mongoUrl": "",
+  "SECRET": "",
   "bodyLimit": "100kb"
 }

@@ -24,7 +24,7 @@ passport.use(new LocalStrategy({
     usernameField: 'email',
     passwordField: 'password'
 },
-Account.authenicate()
+Account.authenticate()
 ));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
